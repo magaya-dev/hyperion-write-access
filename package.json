@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Write access wrapper for hyperion.",
   "main": "lib/writeAccess.js",
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "test": "jasmine"
   },
