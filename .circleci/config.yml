@@ -1,0 +1,32 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # choosing node LTS version, currently 8.9.4
+      - image: circleci/node:8.11.1
+
+    working_directory: ~/hyperion-write-access
+
+    steps:
+      - checkout
+
+      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+
+      # try to restore the dependencies from a previous run
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+
+      - run: npm install
+
+      # keep the the dependencies stored so subsequent installs are fast
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+        
+      # run tests!
+      - run: npm test
