@@ -1,5 +1,7 @@
 # Hyperion Write Access
 
+[![CircleCI](https://circleci.com/gh/magaya-dev/hyperion-write-access.svg?style=svg)](https://circleci.com/gh/magaya-dev/hyperion-write-access)
+
 ## What is it?
 
 Write access wrapper for operations in hyperion.
