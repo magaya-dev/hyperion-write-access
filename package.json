@@ -1,5 +1,5 @@
 {
-  "name": "hyperion-write-access",
+  "name": "@magaya/hyperion-write-access",
   "version": "0.1.0",
   "description": "Write access wrapper for hyperion.",
   "main": "lib/writeAccess.js",
