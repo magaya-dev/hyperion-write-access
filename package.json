@@ -1,0 +1,25 @@
+{
+  "name": "hyperion-write-access",
+  "version": "0.1.0",
+  "description": "Write access wrapper for hyperion.",
+  "main": "lib/writeAccess.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcabot21/hyperion-write-access.git"
+  },
+  "keywords": [
+    "hyperion",
+    "write",
+    "save",
+    "edit"
+  ],
+  "author": "Magaya Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcabot21/hyperion-write-access/issues"
+  },
+  "homepage": "https://github.com/jcabot21/hyperion-write-access#readme"
+}
