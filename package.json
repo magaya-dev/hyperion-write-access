@@ -1,0 +1,31 @@
+{
+  "name": "@magaya/hyperion-write-access",
+  "version": "0.1.0",
+  "description": "Write access wrapper for hyperion.",
+  "main": "lib/writeAccess.js",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magaya-dev/hyperion-write-access.git"
+  },
+  "keywords": [
+    "hyperion",
+    "write",
+    "save",
+    "edit"
+  ],
+  "author": "Magaya Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magaya-dev/hyperion-write-access/issues"
+  },
+  "homepage": "https://github.com/magaya-dev/hyperion-write-access#readme",
+  "devDependencies": {
+    "jasmine": "^3.2.0"
+  }
+}
