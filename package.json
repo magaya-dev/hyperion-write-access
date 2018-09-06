@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jcabot21/hyperion-write-access.git"
+    "url": "git+https://github.com/magaya-dev/hyperion-write-access.git"
   },
   "keywords": [
     "hyperion",
@@ -22,9 +22,9 @@
   "author": "Magaya Corporation",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jcabot21/hyperion-write-access/issues"
+    "url": "https://github.com/magaya-dev/hyperion-write-access/issues"
   },
-  "homepage": "https://github.com/jcabot21/hyperion-write-access#readme",
+  "homepage": "https://github.com/magaya-dev/hyperion-write-access#readme",
   "devDependencies": {
     "jasmine": "^3.2.0"
   }
