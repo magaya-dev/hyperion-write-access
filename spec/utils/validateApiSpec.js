@@ -18,4 +18,13 @@ describe ('Api validation', function () {
 
         expect(isValid(testApi)).toBe(false);
     });
+
+    it ('should pass when only necessary methods exist', function () {
+        const testApi = {
+            saveAsync: () => true,
+            editAsync: () => true,
+        };
+
+        expect(isValid(testApi)).toBe(true);
+    });
 });
