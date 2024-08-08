@@ -1,6 +1,6 @@
 {
   "name": "@magaya/hyperion-write-access",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Write access wrapper for hyperion.",
   "main": "lib/writeAccess.js",
   "files": [
@@ -17,7 +17,8 @@
     "hyperion",
     "write",
     "save",
-    "edit"
+    "edit",
+    "delete"
   ],
   "author": "Magaya Corporation",
   "license": "MIT",
@@ -26,6 +27,6 @@
   },
   "homepage": "https://github.com/magaya-dev/hyperion-write-access#readme",
   "devDependencies": {
-    "jasmine": "^3.2.0"
+    "jasmine": "5.1.0"
   }
 }

@@ -19,7 +19,8 @@ describe ('Write access wrapper', function () {
         it ('should create write access with valid api', function () {
             const testApi = {
                 editAsync: () => true,
-                saveAsync: () => true
+                saveAsync: () => true,
+                deleteAsync: () => true,
             };
 
             const writer = new WriteAccess(testApi);
@@ -42,6 +43,7 @@ describe ('Write access wrapper', function () {
 
         it ('should save', async function () {
             const api = {
+                deleteAsync: () => true,
                 editAsync: () => true,
                 saveAsync: successCb
             }
@@ -52,8 +54,9 @@ describe ('Write access wrapper', function () {
                 .toBeResolvedTo(43);
         });
 
-        it ('should handle save failutre', async function () {
+        it ('should handle save failure', async function () {
             const api = {
+                deleteAsync: () => true,
                 editAsync: () => true,
                 saveAsync: failCb
             }
@@ -66,6 +69,7 @@ describe ('Write access wrapper', function () {
     
         it ('should edit', async function () {
             const api = {
+                deleteAsync: () => true,
                 editAsync: successCb,
                 saveAsync: () => true
             };
@@ -76,8 +80,9 @@ describe ('Write access wrapper', function () {
                 .toBeResolvedTo(43);
         });
 
-        it ('should handle edit failutre', async function () {
+        it ('should handle edit failure', async function () {
             const api = {
+                deleteAsync: () => true,
                 editAsync: failCb,
                 saveAsync: () => true
             }

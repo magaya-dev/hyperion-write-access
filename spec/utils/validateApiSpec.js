@@ -5,6 +5,7 @@ describe ('Api validation', function () {
         const testApi = {
             saveAsync: () => true,
             editAsync: () => true,
+            deleteAsync: () => true,
         };
 
         expect(isValid(testApi)).toBe(true);
